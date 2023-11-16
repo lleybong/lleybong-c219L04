@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="package.css" />
+    <title>Nature and Wildlife</title>
+    <style>
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            min-height: 100%;
+            padding: 20px;
+        }
+
+        .column {
+            margin-bottom: 25px;
+            border-radius: 20px;
+            flex-basis: 33%;
+        }
+
+        .card {
+            padding: 15px 25px;
+            background-color: pink;
+            height: 450px;
+            border-radius: 25px;
+            opacity: 90%;
+        }
+
+        h2 {
+            color: grey;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .button {
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 12px;
+            margin: 20px 100px;
+            cursor: pointer;
+            border-radius: 25px;
+            ;
+        }
+
+        .button {
+            background-color: grey;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .logo:hover {
+            width: 150px;
+            height: 150px;
+            transform: rotate(360deg);
+        }
+
+        nav a:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li:hover {
+            background: grey;
+            color: white
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            width: 162px;
+            display: none;
+        }
+
+        nav ul li ul li {
+            background: grey;
+            display: block;
+        }
+
+        ul li ul li a {
+            display: block !important;
+        }
+
+        ul li ul li:hover {
+            background: #666;
+        }
+
+        .background {
+            filter: grayscale(80%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="videoo2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        | <a href="index.html">Home</a> |
+        <ul>
+            <li>
+                <a href="">Package Tours</a>
+                <ul>
+                    <li><a href="city.html">City Explorer</a></li>
+                    <li><a href="nature.html">Nature and Wildlife</a></li>
+                    <li><a href="art.html">Art and Architecture</a></li>
+                </ul>
+            </li>
+        </ul>|
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact us</a> |
+    </nav>
+
+    <div class="logo">
+        <img src="l031.svg" />
+    </div>
+
+    <div class="heading">
+        <h1>Package Tour 2</h1>
+        <p>Discover what really makes Singapore known to be the Garden City with our Nature and Wildlife Package Tour!
+        </p>
+    </div>
+    <div class="container">
+        <section class="package">
+            <div class="package-image">
+                <img src="pic4.jpg" width="500px">
+            </div>
+            <div class="package-content">
+                <h2>Nature and Wildlife Package Tour</h2>
+                <p>- includes tours around Gardens by the Bay, Bukit Timah Nature Reserve and the Singapore Zoo!</p>
+                <p>- 4 pax</p>
+                <p>- $85 for whole package</p>
+                <p>- limited slots</p>
+                <a href="" class="purchase">Purchase</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footerNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Package Tours</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by Lleyton</p>
+    </div>
+</body>
+
+</html>

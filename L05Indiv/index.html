@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>World Xplore</title>
+    <style>
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            display: inline-block;
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1170px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            min-height: 100%;
+            padding: 20px;
+        }
+
+        .column {
+            margin-bottom: 25px;
+            border-radius: 20px;
+            flex-basis: 33%;
+        }
+
+        .card {
+            padding: 15px 25px;
+            background-color: pink;
+            height: 450px;
+            border-radius: 25px;
+            opacity: 90%;
+        }
+
+        h2 {
+            color: grey;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .button {
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 12px;
+            margin: 20px 100px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        .button {
+            background-color: grey;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        .logo:hover {
+            width: 150px;
+            height: 150px;
+            transform: rotate(360deg);
+        }
+
+        nav a:hover {
+            background-color: grey;
+            color: black;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li:hover {
+            background: grey;
+            color: white
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul {
+            position: absolute;
+            width: 162px;
+            display: none;
+        }
+
+        nav ul li ul li {
+            background: grey;
+            display: block;
+        }
+
+        ul li ul li a {
+            display: block !important;
+        }
+
+        ul li ul li:hover {
+            background: #666;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        @media only screen and (max-width:1100px) {
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            video {
+                display: none;
+            }
+
+            .img {
+                display: block;
+                width: 100%;
+                height: 128px;
+                object-fit: cover;
+            }
+
+            .background img {
+                min-width: 200%;
+                max-width: 400%;
+            }
+
+            .card {
+                max-height: 250px;
+            }
+
+            .card h2 {
+                font-size: 35px;
+            }
+
+            .card p {
+                font-size: 15px;
+                text-align: center;
+            }
+
+            .card img {
+                display: none;
+            }
+
+            .card button {
+                margin: 20px 300px;
+            }
+
+            .container {
+                max-width: 1170px;
+                width: 100%;
+                margin: auto;
+                display: flex;
+
+                min-height: 100%;
+                padding: 20px;
+            }
+
+            .column {
+                margin-bottom: 25px;
+                border-radius: 20px;
+                flex-basis: 95%;
+            }
+
+            .card {
+                padding: 15px 25px;
+                background-color: pink;
+                height: 450px;
+                border-radius: 25px;
+                opacity: 90%;
+            }
+
+            @media only screen and (max-width:700px) {
+                nav {
+                    display: none;
+                }
+
+                .hamburger {
+                    display: block;
+                }
+
+                video {
+                    display: none;
+                }
+
+                .img {
+                    display: block;
+                    width: 100%;
+                    height: 128px;
+                    object-fit: cover;
+                }
+
+                .background img {
+                    min-width: 200%;
+                    max-width: 400%;
+                }
+
+                .card img {
+                    display: none;
+                }
+
+                .container {
+                    max-width: 1170px;
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+
+                    min-height: 100%;
+                    padding: 20px;
+                }
+
+                .column {
+                    margin-bottom: 25px;
+                    border-radius: 20px;
+                    flex-basis: 90%;
+                }
+
+                .card {
+                    max-height: 250px;
+                }
+
+                .card h2 {
+                    font-size: 35px;
+                }
+
+                .card p {
+                    font-size: 15px;
+                    text-align: center;
+                }
+
+                .card img {
+                    display: none;
+                }
+
+                .card button {
+                    margin: 10px 145px;
+                }
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="videoo.mp4" type="video/mp4">
+        </video>
+        <img src="bgpic1.jpg">
+    </div>
+
+    <header>
+
+        <nav>
+            | <a href="index.html">Home</a> |
+            <ul>
+                <li>
+                    <a href="">Package Tours</a>
+                    <ul>
+                        <li><a href="city.html">City Explorer</a></li>
+                        <li><a href="nature.html">Nature and Wildlife</a></li>
+                        <li><a href="art.html">Art and Architecture</a></li>
+                    </ul>
+                </li>
+            </ul>|
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact us</a> |
+        </nav>
+
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+
+        <nav class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="">Package Tours</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="logo">
+            <img src="l031.svg" />
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="column">
+            <div class="card">
+                <h2>Sentosa Island</h2>
+                <p> A resort island with a wide range of attractions
+                    including Universal Studios Singapore, S.E.A. Aquarium and beautiful beaches.</p>
+
+                <img src="pic2.jpg">
+
+                <button class="button button">Learn more</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h2>Gardens by the Bay</h2>
+                <p> A futuristic garden with towering Supertrees, flower domes, and cloud forests.
+                    It's a must-visit for its unique architecture and lush greenery.</p>
+
+                <img src="pic1.jpg">
+
+                <button class="button button">Learn more</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h2>Singapore Flyer</h2>
+                <p>One of the largest observation wheels in the world.
+                    Marvel at the breathtaking views of Marina Bay from the Singapore Flyer's capsules.</p>
+
+                <img src="pic3.jpg">
+
+                <button class="button button">Learn more</button>
+            </div>
+        </div>
+    </div>
+    <div class="footerNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Package Tours</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by Lleyton</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
